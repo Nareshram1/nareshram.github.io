@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/pexels-stephan-seeber-1261728.jpg );
+    /* background: linear-gradient(120deg,#68b7ec,black);    background-size: cover; */
+    background-position: center;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+nav{
+    /* background-color: black; */
+    /* height: 100px; */
+    position: relative;
+    padding-bottom: 20px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #dc205b;
+}
+.home a{
+    text-decoration: none;
+    display: inline-flex;
+    padding: 10px 30px;
+     /*it gives border around check my bg-color*/
+     /* background-color: #191919; */
+    color: antiquewhite;
+    font-weight:bold;
+
+}
+.home a:hover{
+       /* color:#f9004d; */
+       
+       border-radius: 50px 50px;
+       background-color: #f9004d;
+       transition: .2s ease-in-out;
+       transform: scale(1.2);
+}
+.content{
+    position:absolute ;
+    /* display: inline-flex;
+    justify-content: space-between; */
+    
+    
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.tst-alg{
+  text-align: left;
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* h1{
+    overflow: hidden; 
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing:2px; 
+    animation: 
+      typing 2.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  } */
+/* .profile{
+    position: fixed;
+    height: 480px;
+    padding: 0;
+    margin: 0;
+} */
+h1 {
+    font-family: "Montserrat Medium";
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) { font-size: 30px;
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) { font-size: 30px;
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) { font-size: 30px;
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+       font-size: 20px;
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) { font-size: 20px;
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) { font-size: 20px;
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) { font-size: 20px;
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+ /* span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+   */
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+.about{
+      width: 100%;
+      padding: 100px 0px;
+      background-color: #191919;
+}
+.about img{
+  height: auto;
+  width: 430px;
+}
+.about-text{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text h3{
+  color: white;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h3 span{
+  font-size: 60px;
+}
+.about-text p{
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.contact{
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-color:#191919;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  
+}
+.last-para{
+  color: #dc205b;
+  margin-top: 30px;
+  font-size: 23px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  color: rgb(243, 239, 239);
+}
+.logos{
+
+  height: 35px;
+  align-items: center;
+}
+.contact-logo a{
+  /* background-color: rgb(12, 12, 12); */
+  display:inline-flex;
+  align-content: center;
+  justify-content: space-around;
+  padding: 10px 10px; 
+
+  /* padding-top: 3px;
+  padding-left: 4px;
+  padding-bottom: 5px; */
+  /* background-color: #191919; */
+  border-radius: 100px;
+  
+  /* padding-top: 2px;
+  padding-right: 30px;
+  padding-left: 1200px; */
+  
+
+} 
+.contact-logo a:hover{
+  background-color: #fcfc;
+  transition: .2s ease-in-out;
+  transform: scale(1.2);
+}
