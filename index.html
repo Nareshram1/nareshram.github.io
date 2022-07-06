@@ -11,47 +11,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-          
-            <h2 class="logo">Portf <span>lio</span></h2>
-               <div class="home">
-                <a href="#top">Home</a>
-                <a href="#profile">About</a>
-                <a href="#">Projects</a>
-                <a href="#the_end">Contact</a>
-               </div> 
-        </nav>
-
-            <div class="content">
-                <!-- <h4>Hello, this is</h4>
-                <h1>Naresh Ram</h1>
-                <h3>IT student</h3> -->
-                
-                <h1>
-                    <p class="tst-alg">
-
-                
-                <span>HEllo,</span>
-                <span>this </span>
-                <span>is</span><br>
-                <span>Naresh Ram</span><br>
-                <span>-YOLO</span>
-                    </p>
-            </h1>
-            </div>
-
-    </div>
+    <header>
+        <div class="hero">
+            <nav>
+                  
+                   <h2 class="logo" onclick="reload()">Portf <span>lio</span></h2>
+                   <div class="home">
+                    <a href="./index.html">Home</a>
+                    <a href="#profile">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#the_end">Contact</a>
+                   </div> 
+            </nav>
+    
+                <div class="content">
+                    <!-- <h4>Hello, this is</h4>
+                    <h1>Naresh Ram</h1>
+                    <h3>IT student</h3> -->
+                    
+                    <h1>
+                        <p class="tst-alg">
+    
+                    
+                    <span>HEllo,</span>
+                    <span>this </span>
+                    <span>is</span><br>
+                    <span>Naresh Ram</span><br>
+                    <span>-YOLO</span>
+                        </p>
+                </h1>
+                </div>
+    
+        </div>
+    </header>
+   
     <section class="about" id="profile">
         <div class="main">
             <img src="./images/photo_2022-05-10_22-27-29.jpg">
 
             <div class="about-text" >
                 <h3>About <span>me</span></h3>
-                <p class="description">Hi,I'm Naresh ram, born and raised in the visually stunning place Theni, currently pursing my passion IT @SREC</p>
+                <p class="description">Hi,I'm Naresh ram, born and raised in the visually stunning place Theni, currently pursing my passion IT @SREC <br><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" style="text-decoration: none;color:#fcfc">Click here to know my personal blog</a> </p>
             </div>
         </div>
 
+
+    </section>
+    <section class="projects">
 
     </section>
       <hr>
@@ -70,7 +76,34 @@
 
              </div>
     </section>
+    <script>
+        document.querySelector("logo").addEventListener("click", function reload(){
+    reload=location.reload();
+  })
+    </script>
+    <script type="module">
 
-   
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCq8519m0V8d9C3aM4XSZAanKJo2xnV7ho",
+          authDomain: "nareshram1.firebaseapp.com",
+          projectId: "nareshram1",
+          storageBucket: "nareshram1.appspot.com",
+          messagingSenderId: "597675116385",
+          appId: "1:597675116385:web:3726dd9300056d6a8fe720",
+          measurementId: "G-XVGV459T23"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
